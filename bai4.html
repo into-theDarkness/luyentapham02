@@ -6,13 +6,13 @@
 </head>
 <body>
 <script>
-    var a =prompt("Nhập vào: ");
-    function kiemtra() {
+    let a =prompt("Nhập vào: ");
+    function kiemtra(a) {
         if (isNaN(a) == true) {
             return false;
         } return true;
     }
-    if (kiemtra()==true){
+    if (kiemtra(a)==true){
         document.write('Day la ki tu so');
     } else  {
         document.write('Day k phai la ki tu so');

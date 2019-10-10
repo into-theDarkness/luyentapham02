@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai5</title>
+</head>
+<body>
+<script>
+    let min;
+    let i,j;
+    let x = new Array()
+    for(i=0; i<3; i++){
+      x[i] = prompt("Nhap phan tu cua mang");
+    }
+    function kiemtra() {
+        min = x[0];
+        for (j =0;j<x.length; j++){
+            if (min>x[j]){
+                min = x[j];
+            }
+        }
+return min;
+    }
+    document.write('min cua cac so vua nhap vao la: '+ kiemtra());
+</script>
+</body>
+</html>
