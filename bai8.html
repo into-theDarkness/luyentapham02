@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai8</title>
+</head>
+<body>
+<script>
+        let x = new Array();
+        for (let i =0; i <10; i++){
+            x[i]= parseInt(prompt("Nhap vao phan tu cua mang"));
+        }
+        function daonguocmang() {
+            let a;
+            let first =0;
+            let last = x.length-1;
+            while (first<last){
+                a = x[first];
+                x[first] = x[last];
+                x[last]=a;
+                first++;
+                last--;
+            }
+            return x;
+        }
+        document.write('mang sau khi da duoc dao nguoc la: '+ daonguocmang());
+</script>
+</body>
+</html>
