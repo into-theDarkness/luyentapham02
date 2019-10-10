@@ -2,9 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>bai2</title>
 </head>
 <body>
-
+<script>
+    var s = 0;
+    var b =0;
+    var a = prompt("Nhap ban kinh cua duong tron:(cm)");
+    function tinhchuvihinhtron() {
+         b = a *2*3.14;
+        return b;
+    }
+    document.write('Chu vi cua hinh tron co ban kinh la so ban vua nhap la: '+ tinhchuvihinhtron() +'cm' +'<br>');
+    function tinhdientichhinhtron() {
+        s = a*a*3.14;
+        return s;
+    }
+    document.write('Dien tich cua hinh tron co ban kinh la so ban vua nhap la: '+ tinhdientichhinhtron()+'cm'+'<sup>2');
+</script>
 </body>
 </html>
