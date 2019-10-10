@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai1</title>
+</head>
+<body>
+Nhap so can tinh binh phuong vao day
+<input type = "number" id = "socantinh" onchange="tinhtoan()">
+<br>
+Ket qua la:
+<h4 id = "ketquaoday"></h4>
+<script>
+    var b =0;
+    function tinhtoan() {
+       let a =  document.getElementById("socantinh").value;
+      b = a *a;
+        document.getElementById("ketquaoday").innerHTML = b;
+        return b;
+    }
+tinhtoan();
+</script>
+</body>
+</html>
