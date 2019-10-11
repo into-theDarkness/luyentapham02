@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai9</title>
+</head>
+<body>
+<script>
+    let x = new Array();
+    let dem = 0;
+    for (let i =0; i <10;i++){
+        x[i]= prompt("Nhap 1 phan tu cua mang");
+    }
+    document.write(x+'<br>');
+    let a =prompt("Nhap phan tu ban can kiem tra");
+    document.write('ki tu a la:' +a+'<br>');
+    function kiemtra() {
+        let b = x.indexOf(a);
+        if (b==-1){
+            document.write('ki tu ban can kiem tra k co trong mang'+'<br>');
+            return -1;
+        } else {
+            for (let j=0;j<x.length;j++){
+                if(a===x[j]){
+                    dem++;
+                }
+            } return dem;
+        }
+    }
+    kiemtra();
+  document.write('ki tu a co trong mang va so lan xuat hien cua a la: '+dem);
+
+</script>
+</body>
+</html>
